@@ -36,7 +36,7 @@ namespace AuditoriaApi.Controllers
                 if(!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                return Ok("Sucesso");
+                return Created("", "Sucesso");
             }
             catch (System.Exception)
             {

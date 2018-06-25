@@ -34,7 +34,7 @@ namespace AuditoriaApi
             // Adicione após AddMvc
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "LivroApi_Warley", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "AuditoriaApi", Version = "v1" });
             });
         }
 
@@ -59,7 +59,7 @@ namespace AuditoriaApi
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "LivroApi_Warley");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "AuditoriaApi");
                 c.RoutePrefix = string.Empty; // Para que a rota padrão já execute a UI do swagger
             });           
         }

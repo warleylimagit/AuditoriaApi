@@ -11,8 +11,6 @@ namespace AuditoriaApi.ViewModel
         public string DescricaoAcao { get; set; }
 
         [Required]
-        public string Servico { get; set; }
-        
-        public DateTime DataInclusao { get; set; }
+        public string Servico { get; set; }        
     }
 }
